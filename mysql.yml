@@ -1,0 +1,10 @@
+- name: Setup mysql
+  hosts: all
+  tasks:
+    - name: Run mysql code
+      ansible.builtin.shell: |
+        git clone https://github.com/raghudevopsb90/roboshop-shell-v2.git
+        cd roboshop-shell-v2
+        sudo bash 02-mysql.sh
+
+
